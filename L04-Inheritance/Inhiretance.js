@@ -49,4 +49,8 @@ DisplayInfo_Html() {
       super(name, age, status);
       this.grade = grade; // Changed healthStatus to grade
     }
+    displayInfo() {
+        super.displayInfo();
+        console.log("Grade: " + this.grade); // Changed health status to grade
+      }
   }
