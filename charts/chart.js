@@ -11,6 +11,10 @@ async init() {
     }
 }
 async fetchData() {
-   
+    try {
+        const response = await fetch(this.dataUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
         }
     }
+}
