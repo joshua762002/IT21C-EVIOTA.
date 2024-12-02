@@ -64,4 +64,10 @@
         super.displayInfo(); // Call the parent class's method
         console.log("Grade: " + this.grade);
       }
+      // Override METHOD to display additional grade info in HTML
+      DisplayInfo_Html() {
+        return super.DisplayInfo_Html() + `
+          <strong>Grade:</strong> ${this.grade}<br><br>
+        `;
+      }
     }
