@@ -14,3 +14,54 @@
 
 </head>
 <body>
+    <h1> Topic 3: Access Modifiers and Encapsulation </h1>
+    <h1 id="Info"></h1>
+    
+    <script> 
+    
+    class Song {
+      // Private Fields
+      #genre;
+      #artist;
+      #mood;
+  
+      constructor(genre, artist, mood){
+        this.#genre = genre;
+        this.#artist = artist;
+        this.#mood = mood;
+      }
+      
+      // Getters
+      get genre (){
+        return this.#genre;
+      }
+      
+      get artist () {
+        return this.#artist;
+      }
+      
+      get mood(){
+        return this.#mood;
+      }
+  
+      // Method to Display Song Info in the console 
+      displaySongInfo(){
+        console.log("Genre: " + this.genre);
+        console.log("Artist: " + this.artist);
+        console.log("Mood: " + this.mood);
+      }
+  
+      // Method to Display Song Info in HTML
+      displaySongInfoInHtml(songs) {
+        const songElement = document.getElementById('Info');
+        let htmlString = '';
+        for (const song of songs) {
+          htmlString += `
+            <strong>Genre:</strong> ${song.genre}<br>
+            <strong>Artist:</strong> ${song.artist}<br>
+            <strong>Mood:</strong> ${song.mood}<br><br>
+          `;
+        }
+        songElement.innerHTML = htmlString;
+      }
+    }
