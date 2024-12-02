@@ -85,3 +85,5 @@ class ChartCreator {
         });
     }
   }
+  const lineChartCreator = new LineChart('data.json');
+  lineChartCreator.init();
