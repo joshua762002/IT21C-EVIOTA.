@@ -71,3 +71,13 @@
         `;
       }
     }
+     // Function to display all students' info in HTML
+     function displayAllStudents(students) {
+        const personInfoDiv = document.getElementById('PersonInfo');
+        let allInfo = '';
+  
+        students.forEach(student => {
+          allInfo += student.DisplayInfo_Html();
+        });
+    }
+      
