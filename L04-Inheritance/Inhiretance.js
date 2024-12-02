@@ -60,4 +60,7 @@ DisplayInfo_Html() {
         `;
       }
     }
+    // Create an instance of Student instead of Patient
+  const student1 = new Student('joshua', '21', 'Student', 'A'); // Changed from Patient to Student
+  
     
