@@ -37,3 +37,16 @@ DisplayInfo_Html() {
     `;
   }
 }
+ /*
+  The extends keyword is used to create a subclass (child class) that inherits from another class (parent class).
+  */
+  
+  /*
+  The super keyword is used to call the constructor of the parent class, allowing the child class to inherit and initialize the parent’s properties.
+  */
+  class Student extends Person {
+    constructor(name, age, status, grade) {
+      super(name, age, status);
+      this.grade = grade; // Changed healthStatus to grade
+    }
+  }
