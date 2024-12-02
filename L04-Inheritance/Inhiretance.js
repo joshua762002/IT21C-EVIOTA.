@@ -47,20 +47,22 @@ DisplayInfo_Html() {
   class Student extends Person {
     constructor(name, age, status, grade) {
       super(name, age, status);
-      this.grade = grade; // Changed healthStatus to grade
+      this.grade = grade; 
     }
     displayInfo() {
         super.displayInfo();
-        console.log("Grade: " + this.grade); // Changed health status to grade
+        console.log("Grade: " + this.grade); 
       }
       DisplayInfo_Html() {
         const personInfo = document.getElementById('PersonInfo');
         personInfo.innerHTML += `
-          <br><strong>Grade:</strong> ${this.grade} // Changed health status to grade
+          <br><strong>Grade:</strong> ${this.grade} 
         `;
       }
     }
-    // Create an instance of Student instead of Patient
-  const student1 = new Student('joshua', '21', 'Student', 'A'); // Changed from Patient to Student
+    // Create an instance of Student 
+  const student1 = new Student('joshua', '21', 'Student', 'A'); 
+// Display info in console
+student1.displayInfo();
   
     
