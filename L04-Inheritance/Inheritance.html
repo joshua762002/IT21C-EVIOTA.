@@ -59,4 +59,9 @@
           super(name, age, status);
           this.grade = grade;
         }
+    // Override METHOD to display additional grade info in the console
+    displayInfo() {
+        super.displayInfo(); // Call the parent class's method
+        console.log("Grade: " + this.grade);
+      }
     }
