@@ -65,3 +65,22 @@
         songElement.innerHTML = htmlString;
       }
     }
+    // Creating instances of the Song class
+    const song1 = new Song('Love Song', 'Adele', 'Sad');
+    const song2 = new Song('Rock Song', 'Imagine Dragons', 'Happy');
+
+    // Call methods to display info in the console 
+    song1.displaySongInfo();
+    song2.displaySongInfo();
+
+    // Create an array of both instances
+    const songs = [song1, song2];
+
+    // Call the method to display info for both instances in HTML
+    song1.displaySongInfoInHtml(songs);
+
+    </script>
+
+</body>
+
+</html>
