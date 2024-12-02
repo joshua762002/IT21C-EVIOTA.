@@ -64,4 +64,24 @@ class ChartCreator {
         super(dataUrl);
         this.barCtx = document.getElementById('barChart');
     }
-}
+    createBarChart() {
+        new Chart(this.barCtx, {
+            type: 'bar',
+            data: {
+                labels: this.chartData.labels,
+                datasets: [{
+                    label: 'cute points',
+                    data: this.chartData.data,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+  }
