@@ -53,4 +53,11 @@ DisplayInfo_Html() {
         super.displayInfo();
         console.log("Grade: " + this.grade); // Changed health status to grade
       }
-  }
+      DisplayInfo_Html() {
+        const personInfo = document.getElementById('PersonInfo');
+        personInfo.innerHTML += `
+          <br><strong>Grade:</strong> ${this.grade} // Changed health status to grade
+        `;
+      }
+    }
+    
