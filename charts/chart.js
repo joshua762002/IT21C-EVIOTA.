@@ -27,3 +27,12 @@ createCharts() {
     throw new Error('createCharts() must be implemented in subclasses');
 }
 }
+class LineChart extends ChartCreator {
+    constructor(dataUrl) {
+        super(dataUrl);
+        this.areaCtx = document.getElementById('areaChart');
+    }
+}
+    createCharts() {
+        this.createAreaChart();
+    }
