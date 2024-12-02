@@ -38,3 +38,10 @@ class song {
     DisplaysongInfo_Html(){
     }
   }
+  // Creating instances of the song class
+  const songInfo1 = new song('love song', 'adele', 'sad');
+  const songInfo2 = new song('rock song ', 'Imagine dragons', 'happy');
+  
+  // Call methods to display info
+songInfo1.DisplaysongInfo();  
+  songInfo1.DisplasongInfo();
