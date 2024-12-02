@@ -8,4 +8,17 @@ class Person {
       this.#age = age;
       this.#status = status;
     }
+    
+    // GETTERS
+    get name() {
+        return this.#name;
+      }
+    
+      get age() {
+        return this.#age;
+      }
+    
+      get status() {
+        return this.#status;
+      }
 }
