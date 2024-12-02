@@ -75,9 +75,25 @@
      function displayAllStudents(students) {
         const personInfoDiv = document.getElementById('PersonInfo');
         let allInfo = '';
-  
         students.forEach(student => {
           allInfo += student.DisplayInfo_Html();
         });
     }
-      
+      // Create instances of Student
+    const student1 = new Student('jacoba', '21', 'Student', 'A');
+    const student2 = new Student('joshua', '21', 'Student', 'A');
+
+    // Array of students
+    const students = [student1, student2];
+
+    // Display all students' information in HTML
+    displayAllStudents(students);
+
+    // Display all students' information in the console
+    students.forEach(student => student.displayInfo());
+
+  </script>
+
+</body>
+
+</html>
