@@ -10,4 +10,7 @@ async init() {
         this.createCharts();
     }
 }
-}
+async fetchData() {
+   
+        }
+    }
