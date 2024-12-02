@@ -87,3 +87,5 @@ class ChartCreator {
   }
   const lineChartCreator = new LineChart('data.json');
   lineChartCreator.init();
+  const barChartCreator = new BarChart('data.json');
+  barChartCreator.init();
