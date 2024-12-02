@@ -89,3 +89,5 @@ class ChartCreator {
   lineChartCreator.init();
   const barChartCreator = new BarChart('data.json');
   barChartCreator.init();
+  console.log(lineChartCreator.dataUrl);
+  console.log(barChartCreator.dataUrl);
