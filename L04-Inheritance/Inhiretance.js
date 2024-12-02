@@ -21,4 +21,10 @@ class Person {
       get status() {
         return this.#status;
       }
+      // METHODS TO DISPLAY INFO
+    displayInfo() {
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Status: " + this.status);
+      }
 }
